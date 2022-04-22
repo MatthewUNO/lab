@@ -6,9 +6,12 @@ class Television:
     MAX_VOLUME = 2      # Maximum TV volume
 
     def __init__(self):
-        self.__channel = Television.MIN_CHANNEL
-        self.__volume = Television.MIN_VOLUME
-        self.__status = False
+        """
+        Method to set default configuration
+        """
+        self.__channel: int = Television.MIN_CHANNEL
+        self.__volume: int = Television.MIN_VOLUME
+        self.__status: bool = False
 
     def power(self):
         """
